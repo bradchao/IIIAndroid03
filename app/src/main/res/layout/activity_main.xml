@@ -16,7 +16,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Got ot Page2"
+        android:text="Go to Page2"
+        android:onClick="gotoPage2"
         />
 
 </LinearLayout>
