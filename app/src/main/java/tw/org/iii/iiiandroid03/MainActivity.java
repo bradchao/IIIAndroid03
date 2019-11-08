@@ -6,19 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private TextView lottery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        lottery = findViewById(R.id.lottery);
+
         Log.v("brad", "onCreate");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+        lottery.setText("" + (int)(Math.random()*49+1));
         Log.v("brad", "onStart");
     }
 
