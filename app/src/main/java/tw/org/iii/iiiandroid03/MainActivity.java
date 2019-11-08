@@ -2,6 +2,7 @@ package tw.org.iii.iiiandroid03;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -53,5 +54,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void gotoPage2(View view) {
         Log.v("brad", "Click");
+
+        Intent intent = new Intent(this, Page2Activity.class);
+        startActivity(intent);
+
     }
+
 }
